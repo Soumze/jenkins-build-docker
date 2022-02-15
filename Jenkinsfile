@@ -1,11 +1,11 @@
 node{
   def app
 
-    stage('clone') {
+    stage('Clone') {
         checkout scm
     }
 
-    stage('buil image') {
+    stage('Buil image') {
         app = docker.build("sekou/nginx")
     }
 
