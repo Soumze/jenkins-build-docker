@@ -13,7 +13,6 @@ node{
         docker.image('sekou/nginx').whithRun('-p 80:80') { c ->
 
         sh 'docker ps'
-
         sh 'curl localhost'
     
     }
